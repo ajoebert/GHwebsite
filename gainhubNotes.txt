@@ -1,0 +1,65 @@
+
+
+CRM - Revolutionize your customer interactions with our cutting- edge CRM solution. Streamline communication, track leads, and foster lasting relationships. Elevate your business efficiency and customer satisfaction to new heights..
+
+
+CPQ - Transform your sales process with our CPQ (Configure Price Quote) solution. Seamlessly create accurate quotes, configure products effortlessly, and optimize pricing strategies. Elevate your sales team's performance and provide customers with swift, customized quotes for a truly exceptional buying experience.
+
+LMS -
+
+Unlock the power of knowledge with our advanced Learning Management System (LMS). Tailored for seamless education and training, our platform offers a rich, interactive experience. From course creation to performance analytics, empower your learners and educators with a feature-rich LMS. Elevate your educational initiatives and embrace the future of learning with our innovative and user-friendly platform. .
+
+OMS -
+
+Enhance your order fulfillment with our powerful OMS (Order Management System). Seamlessly orchestrate the entire order lifecycle, from placement to delivery. Optimize inventory, streamline processes, and ensure timely, accurate order fulfillment. Empower your business to exceed customer expectations with our advanced OMS solution.
+
+PROJECT MANAGEMENT -
+
+Empower your projects with our dynamic Project Management solution. Seamlessly plan, execute, and collaborate on projects of any scale. From task assignment to progress tracking, our platform ensures efficient project delivery. Elevate team collaboration, enhance productivity, and bring your projects to success with our intuitive Project Management tools. .
+
+HRMS -
+
+Revolutionize your workforce management with our robust Human Resource Management System (HRMS). Our comprehensive solution empowers businesses to streamline HR processes, from recruitment to performance management. Elevate employee engagement, simplify payroll, and enhance overall organizational efficiency. Experience the next level of HR management with our user-friendly and integrated HRMS platform.
+
+FFM 
+
+Experience the future of retail with our comprehensive retail solution. Elevate your store's performance with cutting-edge technology that seamlessly integrates point-of-sale, inventory management, and customer engagement. Unlock new possibilities for growth, efficiency, and customer satisfaction. Embrace the evolution of retail with our innovative solutions tailored for success. .
+
+SERVICE MANAGEMENT
+
+Transform the way you deliver exceptional service with our comprehensive Service Management solution. From inquiry to resolution, our platform streamlines every aspect of your service process. Empower your team to provide top-notch support, track service requests seamlessly, and exceed customer expectations. Elevate your service standards and drive customer satisfaction with our innovative Service Management tools. .
+
+
+verticals -
+
+- B2B SALES
+- retail
+- telco
+- pharma
+- fintech
+- manufacturing
+
+application 
+
+- service managem 6
+- LMS 5
+- project 3
+- HR m 4
+- B2B sales 1
+- inventory m 8
+- MLM 7
+- Retail m 2
+- 
+
+STREAM NAME
+Gainhub
+
+STREAM URL
+https://gain-hub.com/
+
+STREAM ID
+6667424079
+
+MEASUREMENT ID
+G-VZEXJCFQN6
+
