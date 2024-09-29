@@ -193,6 +193,10 @@
         padding-left: 60px;
         padding-right: 60px;
     }
+    .still-apps{
+        padding-left: 60px !important;
+        padding-right: 60px !important;
+    }
     /* .ban-con-2 svg{
         width:400px;
         height:350px;
@@ -207,7 +211,7 @@
     .text-area .quote{
         font-size: 20px;
     }
-    .banner-container{
+    .banner-container, .still-apps{
         padding-left: 40px;
         padding-right: 40px;
     }
@@ -253,6 +257,10 @@
     gap:0 !important;
     margin-bottom: 10px !important;
 }
+.still-apps{
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
 .text-area{
     width:100% !important;
     margin-top: -40px;
@@ -285,6 +293,10 @@
         padding-right: 25px !important;
         gap:0 !important;
         margin-bottom: 10px !important;
+    }
+    .still-apps{
+        padding-left: 25px !important;
+        padding-right: 25px !important;
     }
     .text-area{
         width:100% !important;
@@ -330,6 +342,10 @@
         padding-right: 25px !important;
         gap:0 !important;
         margin-bottom: 10px !important;
+    }
+    .still-apps{
+        padding-left: 25px !important;
+        padding-right: 25px !important;
     }
     .ban-con-1{
         order: 1 !important ;
@@ -379,6 +395,10 @@
         padding-right: 25px !important;
         gap:0 !important;
         margin-bottom: 0px !important;
+    }
+    .still-apps{
+        padding-left: 25px !important;
+        padding-right: 25px !important;
     }
     .ban-con-1{
         order: 1 !important;
@@ -485,4 +505,62 @@
 
 .btn-close:hover{
     box-shadow: none;
+}
+
+.apps-grid{
+    display:flex;
+    gap:40px;
+    align-items: center;
+}
+
+.app-image-2{
+    width:"1000px";
+    height:"100px";
+}
+
+.apps-grid-2{
+    margin-top: 10px;
+}
+
+.still-container-apps{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:40px;
+}
+
+@media screen and (min-device-width:300px) and (max-device-width:1050px){
+    .still-container-apps{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap:50px;
+    }
+
+   
+}
+@media screen and (min-device-width:1050px) and (max-device-width:3000px){
+    .still-container-banCon-1{
+        width:85%;
+    }
+}
+@media screen and (min-device-width:300px) and (max-device-width:500px){
+    .still-container-apps{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap:30px;
+    }
+    .apps-grid{
+        display:flex;
+        gap:20px;
+        align-items: center;
+    }
+    
+    .app-image-2{
+        width:"500px";
+        height:"100px";
+    }
 }
