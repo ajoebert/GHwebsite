@@ -38,69 +38,159 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="./assets/js/chatbot.js" defer></script>
+  <style>
+    .integration-heading{
+        font-family: 'Nunito', sans-serif;
+    }
+    .get-a-demo{
+        outline: 2px solid #f97316;
+    }
+    .still-container-apps{
+        gap:0px;
+    }
+    .inbox-style{
+        outline: 1px solid #6734a8;
+    }
+    .gainHub-products-integration{
+        display: flex;
+        gap:17px;
+    }
+    
+    .gainHub-products-integration .gainHub-products-integration-img{
+        width:40% !important;
+        position: relative;
+    }
+    .gainHub-products-integration .gainHub-products-integration-img .gainHub-product-img-integration{
+        position: absolute;
+        width: 100px !important;
+    }
+
+    .gainHub-products-integration .gainHub-products-integration-content{
+        width:100% !important;
+    }
+
+    .form-container-wrapper {
+        background-color: #ffffff; 
+        padding: 25px 50px 25px;
+        border-radius: 8px;
+        width: 70%;
+        margin-top: 30px;
+    }
+
+    .form-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: end;
+    }
+    .form-container .form-group {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 200px; /* Ensures each field takes equal space, with a minimum width of 200px */
+    }
+    .form-container input, .form-container button {
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .form-container button {
+        flex: 0 0 auto; /* Keeps the button size consistent */
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        width:100px;
+    }
+
+    .integration-heading{
+      color:rgb(61, 60, 60);
+    }
+    
+    @media (max-width: 600px) {
+        .form-container {
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .form-container-wrapper {
+            background-color: #ffffff; 
+            padding: 25px 50px 25px;
+            border-radius: 8px;
+            width: 100% !important;
+            margin-top: 20px;
+        }
+        .form-container .form-group {
+            display: flex;
+            flex-direction: column;
+            flex: 0px; /* Ensures each field takes equal space, with a minimum width of 200px */
+        }
+    }
+
+  </style>
 
 </head>
 
 <body>
   <!-- header Start-->
-  <div class="">
+  <div class="hidden">
     <button type="button" class="chatbot-toggler">
-    <span><svg width="100" height="100" viewBox="0 0 932 890" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="170.007" height="170" fill="none" />
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M601 273C579.461 273 562 290.461 562 312C562 331.541 576.372 347.725 595.122 350.56L583 364.5L641.368 351H786C807.539 351 825 333.539 825 312C825 290.461 807.539 273 786 273H601Z"
-          fill="#526EE8" />
-        <mask id="path-2-inside-1_460_744" fill="white">
+      <span><svg width="100" height="100" viewBox="0 0 932 890" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="170.007" height="170" fill="none" />
           <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M611.548 558.241C596.908 622.248 539.616 670 471.172 670H460.701C392.256 670 334.965 622.248 320.324 558.241C326.168 546.257 338.47 538 352.701 538H579.172C593.402 538 605.704 546.257 611.548 558.241Z" />
-        </mask>
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M611.548 558.241C596.908 622.248 539.616 670 471.172 670H460.701C392.256 670 334.965 622.248 320.324 558.241C326.168 546.257 338.47 538 352.701 538H579.172C593.402 538 605.704 546.257 611.548 558.241Z"
-          fill="#FF7F27" />
-        <path
-          d="M611.548 558.241L616.422 559.356L616.816 557.636L616.042 556.05L611.548 558.241ZM320.324 558.241L315.83 556.05L315.057 557.636L315.45 559.356L320.324 558.241ZM606.674 557.126C592.542 618.91 537.233 665 471.172 665V675C541.999 675 601.274 625.586 616.422 559.356L606.674 557.126ZM471.172 665H460.701V675H471.172V665ZM460.701 665C394.639 665 339.33 618.91 325.198 557.126L315.45 559.356C330.599 625.586 389.873 675 460.701 675V665ZM324.818 560.433C329.857 550.101 340.454 543 352.701 543V533C336.486 533 322.48 542.413 315.83 556.05L324.818 560.433ZM352.701 543H579.172V533H352.701V543ZM579.172 543C591.418 543 602.016 550.101 607.054 560.433L616.042 556.05C609.393 542.413 595.386 533 579.172 533V543Z"
-          fill="white" mask="url(#path-2-inside-1_460_744)" />
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M571.018 538C544.723 566.297 507.184 584 465.509 584C423.835 584 386.295 566.297 360 538H571.018Z"
-          fill="white" />
-        <path d="M351 532C386.734 575.014 482.563 635.233 580 532" stroke="#FF7F27" stroke-width="13"
-          stroke-linecap="round" />
-        <rect x="531" y="393" width="94" height="76" rx="38" fill="#FF7F27" />
-        <path d="M466 273V329" stroke="#FF7F27" stroke-width="3" />
-        <rect x="306" y="393" width="94" height="76" rx="38" fill="#FF7F27" />
-        <rect x="341.5" y="315.5" width="249" height="249" rx="124.5" fill="white" stroke="#FF7F27"
-          stroke-width="5" />
-        <path d="M426 487C438.639 498.319 472.333 514.166 506 487" stroke="#526EE8" stroke-width="9"
-          stroke-linecap="round" />
-        <path d="M509 282.895C515.792 276.608 525.3 259.85 509 243.105" stroke="#526EE8" stroke-width="3"
-          stroke-linecap="round" />
-        <path d="M521 296.158C532.319 285.681 548.166 257.75 521 229.842" stroke="#526EE8" stroke-width="3"
-          stroke-linecap="round" />
-        <path d="M535 305C549.338 291.729 569.411 256.35 535 221" stroke="#526EE8" stroke-width="3"
-          stroke-linecap="round" />
-        <path d="M423 243.105C416.208 249.392 406.7 266.15 423 282.895" stroke="#526EE8" stroke-width="3"
-          stroke-linecap="round" />
-        <path d="M411 229.842C399.681 240.319 383.834 268.25 411 296.158" stroke="#526EE8" stroke-width="3"
-          stroke-linecap="round" />
-        <path d="M397 221C382.662 234.271 362.589 269.65 397 305" stroke="#526EE8" stroke-width="3"
-          stroke-linecap="round" />
-        <path
-          d="M402 425.482C402 437.898 411.85 425.482 424 425.482C436.15 425.482 446 437.898 446 425.482C446 413.065 436.15 403 424 403C411.85 403 402 413.065 402 425.482Z"
-          fill="#526EE8" />
-        <path
-          d="M493 425.482C493 437.898 502.85 425.482 515 425.482C527.15 425.482 537 437.898 537 425.482C537 413.065 527.15 403 515 403C502.85 403 493 413.065 493 425.482Z"
-          fill="#526EE8" />
-        <rect x="451.5" y="250.5" width="29" height="29" rx="14.5" fill="white" stroke="#FF7F27" stroke-width="3" />
-        <path
-          d="M606.581 309.547V323H603.145V293.182H606.581V304.131H606.872C607.396 302.976 608.183 302.058 609.231 301.379C610.289 300.69 611.696 300.345 613.453 300.345C614.977 300.345 616.312 300.651 617.457 301.262C618.602 301.864 619.491 302.791 620.121 304.043C620.762 305.286 621.082 306.868 621.082 308.79V323H617.646V309.023C617.646 307.246 617.185 305.873 616.263 304.902C615.351 303.922 614.084 303.432 612.463 303.432C611.337 303.432 610.328 303.67 609.435 304.145C608.551 304.621 607.853 305.315 607.338 306.227C606.833 307.14 606.581 308.246 606.581 309.547ZM631.911 293.182L631.62 314.614H628.242L627.951 293.182H631.911ZM629.931 323.233C629.213 323.233 628.596 322.976 628.082 322.461C627.568 321.947 627.31 321.33 627.31 320.612C627.31 319.894 627.568 319.278 628.082 318.763C628.596 318.249 629.213 317.991 629.931 317.991C630.649 317.991 631.266 318.249 631.78 318.763C632.295 319.278 632.552 319.894 632.552 320.612C632.552 321.088 632.43 321.525 632.188 321.923C631.955 322.321 631.639 322.641 631.241 322.884C630.853 323.116 630.416 323.233 629.931 323.233ZM654.388 293.182V323H650.777V293.182H654.388ZM667.742 323.524C666.325 323.524 665.039 323.257 663.884 322.723C662.729 322.18 661.812 321.398 661.132 320.379C660.453 319.35 660.113 318.108 660.113 316.652C660.113 315.371 660.366 314.332 660.87 313.536C661.375 312.731 662.05 312.1 662.894 311.643C663.739 311.187 664.67 310.848 665.69 310.624C666.718 310.391 667.752 310.207 668.791 310.071C670.15 309.896 671.251 309.765 672.096 309.678C672.95 309.581 673.571 309.421 673.959 309.197C674.357 308.974 674.556 308.586 674.556 308.033V307.916C674.556 306.48 674.163 305.363 673.377 304.567C672.601 303.772 671.421 303.374 669.839 303.374C668.199 303.374 666.913 303.733 665.981 304.451C665.049 305.169 664.394 305.936 664.015 306.751L660.754 305.587C661.336 304.228 662.113 303.17 663.083 302.413C664.064 301.646 665.131 301.112 666.286 300.811C667.451 300.5 668.597 300.345 669.723 300.345C670.441 300.345 671.266 300.433 672.198 300.607C673.139 300.772 674.047 301.117 674.92 301.641C675.804 302.165 676.536 302.956 677.119 304.014C677.701 305.072 677.992 306.489 677.992 308.266V323H674.556V319.972H674.382C674.149 320.457 673.76 320.976 673.217 321.529C672.673 322.083 671.95 322.554 671.047 322.942C670.145 323.33 669.043 323.524 667.742 323.524ZM668.267 320.438C669.626 320.438 670.771 320.171 671.703 319.637C672.644 319.103 673.353 318.414 673.828 317.569C674.314 316.725 674.556 315.837 674.556 314.905V311.76C674.411 311.935 674.09 312.095 673.595 312.24C673.11 312.376 672.547 312.498 671.907 312.604C671.276 312.701 670.659 312.789 670.057 312.866C669.465 312.934 668.985 312.993 668.616 313.041C667.723 313.158 666.888 313.347 666.112 313.609C665.345 313.861 664.724 314.245 664.248 314.759C663.782 315.264 663.549 315.953 663.549 316.827C663.549 318.021 663.991 318.923 664.874 319.535C665.767 320.137 666.898 320.438 668.267 320.438ZM684.264 323V300.636H687.584V304.131H687.875C688.341 302.937 689.093 302.01 690.132 301.35C691.17 300.68 692.417 300.345 693.873 300.345C695.349 300.345 696.577 300.68 697.557 301.35C698.547 302.01 699.319 302.937 699.872 304.131H700.105C700.678 302.976 701.537 302.058 702.682 301.379C703.827 300.69 705.201 300.345 706.802 300.345C708.802 300.345 710.437 300.971 711.709 302.223C712.981 303.466 713.616 305.402 713.616 308.033V323H710.18V308.033C710.18 306.383 709.729 305.203 708.826 304.495C707.923 303.786 706.861 303.432 705.638 303.432C704.065 303.432 702.847 303.907 701.983 304.859C701.119 305.8 700.687 306.994 700.687 308.44V323H697.193V307.683C697.193 306.412 696.78 305.388 695.955 304.611C695.13 303.825 694.068 303.432 692.767 303.432C691.874 303.432 691.039 303.67 690.263 304.145C689.496 304.621 688.875 305.281 688.399 306.125C687.933 306.96 687.7 307.926 687.7 309.023V323H684.264ZM752.279 302.5C751.959 301.52 751.537 300.641 751.013 299.865C750.498 299.078 749.882 298.409 749.164 297.855C748.455 297.302 747.65 296.88 746.747 296.589C745.844 296.298 744.854 296.152 743.777 296.152C742.01 296.152 740.404 296.608 738.957 297.521C737.511 298.433 736.361 299.777 735.507 301.554C734.653 303.33 734.225 305.509 734.225 308.091C734.225 310.673 734.657 312.852 735.521 314.628C736.385 316.404 737.555 317.749 739.03 318.661C740.506 319.574 742.165 320.03 744.01 320.03C745.718 320.03 747.222 319.666 748.523 318.938C749.833 318.2 750.853 317.162 751.581 315.822C752.318 314.473 752.687 312.886 752.687 311.061L753.794 311.294H744.825V308.091H756.181V311.294C756.181 313.75 755.657 315.885 754.609 317.7C753.57 319.515 752.134 320.923 750.299 321.923C748.475 322.913 746.378 323.408 744.01 323.408C741.369 323.408 739.05 322.786 737.05 321.544C735.06 320.302 733.507 318.535 732.391 316.244C731.284 313.954 730.731 311.236 730.731 308.091C730.731 305.732 731.047 303.611 731.678 301.728C732.318 299.836 733.221 298.224 734.386 296.895C735.55 295.565 736.929 294.546 738.521 293.837C740.112 293.128 741.864 292.774 743.777 292.774C745.349 292.774 746.815 293.012 748.174 293.488C749.542 293.953 750.76 294.618 751.828 295.482C752.906 296.336 753.803 297.36 754.522 298.554C755.24 299.739 755.735 301.054 756.007 302.5H752.279ZM763.301 323V300.636H766.737V323H763.301ZM765.048 296.909C764.379 296.909 763.801 296.681 763.316 296.225C762.84 295.769 762.602 295.22 762.602 294.58C762.602 293.939 762.84 293.391 763.316 292.934C763.801 292.478 764.379 292.25 765.048 292.25C765.718 292.25 766.291 292.478 766.766 292.934C767.252 293.391 767.494 293.939 767.494 294.58C767.494 295.22 767.252 295.769 766.766 296.225C766.291 296.681 765.718 296.909 765.048 296.909ZM779.612 323.524C778.194 323.524 776.908 323.257 775.753 322.723C774.598 322.18 773.681 321.398 773.002 320.379C772.322 319.35 771.982 318.108 771.982 316.652C771.982 315.371 772.235 314.332 772.739 313.536C773.244 312.731 773.919 312.1 774.763 311.643C775.608 311.187 776.54 310.848 777.559 310.624C778.588 310.391 779.621 310.207 780.66 310.071C782.019 309.896 783.12 309.765 783.965 309.678C784.819 309.581 785.44 309.421 785.829 309.197C786.227 308.974 786.426 308.586 786.426 308.033V307.916C786.426 306.48 786.032 305.363 785.246 304.567C784.47 303.772 783.29 303.374 781.708 303.374C780.068 303.374 778.782 303.733 777.85 304.451C776.918 305.169 776.263 305.936 775.884 306.751L772.623 305.587C773.205 304.228 773.982 303.17 774.953 302.413C775.933 301.646 777.001 301.112 778.156 300.811C779.32 300.5 780.466 300.345 781.592 300.345C782.31 300.345 783.135 300.433 784.067 300.607C785.008 300.772 785.916 301.117 786.79 301.641C787.673 302.165 788.406 302.956 788.988 304.014C789.57 305.072 789.862 306.489 789.862 308.266V323H786.426V319.972H786.251C786.018 320.457 785.63 320.976 785.086 321.529C784.542 322.083 783.819 322.554 782.917 322.942C782.014 323.33 780.912 323.524 779.612 323.524ZM780.136 320.438C781.495 320.438 782.64 320.171 783.572 319.637C784.513 319.103 785.222 318.414 785.698 317.569C786.183 316.725 786.426 315.837 786.426 314.905V311.76C786.28 311.935 785.96 312.095 785.465 312.24C784.979 312.376 784.416 312.498 783.776 312.604C783.145 312.701 782.528 312.789 781.927 312.866C781.334 312.934 780.854 312.993 780.485 313.041C779.592 313.158 778.757 313.347 777.981 313.609C777.214 313.861 776.593 314.245 776.117 314.759C775.651 315.264 775.418 315.953 775.418 316.827C775.418 318.021 775.86 318.923 776.743 319.535C777.636 320.137 778.767 320.438 780.136 320.438Z"
-          fill="white" />
-      </svg></span>
+            d="M601 273C579.461 273 562 290.461 562 312C562 331.541 576.372 347.725 595.122 350.56L583 364.5L641.368 351H786C807.539 351 825 333.539 825 312C825 290.461 807.539 273 786 273H601Z"
+            fill="#526EE8" />
+          <mask id="path-2-inside-1_460_744" fill="white">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M611.548 558.241C596.908 622.248 539.616 670 471.172 670H460.701C392.256 670 334.965 622.248 320.324 558.241C326.168 546.257 338.47 538 352.701 538H579.172C593.402 538 605.704 546.257 611.548 558.241Z" />
+          </mask>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M611.548 558.241C596.908 622.248 539.616 670 471.172 670H460.701C392.256 670 334.965 622.248 320.324 558.241C326.168 546.257 338.47 538 352.701 538H579.172C593.402 538 605.704 546.257 611.548 558.241Z"
+            fill="#FF7F27" />
+          <path
+            d="M611.548 558.241L616.422 559.356L616.816 557.636L616.042 556.05L611.548 558.241ZM320.324 558.241L315.83 556.05L315.057 557.636L315.45 559.356L320.324 558.241ZM606.674 557.126C592.542 618.91 537.233 665 471.172 665V675C541.999 675 601.274 625.586 616.422 559.356L606.674 557.126ZM471.172 665H460.701V675H471.172V665ZM460.701 665C394.639 665 339.33 618.91 325.198 557.126L315.45 559.356C330.599 625.586 389.873 675 460.701 675V665ZM324.818 560.433C329.857 550.101 340.454 543 352.701 543V533C336.486 533 322.48 542.413 315.83 556.05L324.818 560.433ZM352.701 543H579.172V533H352.701V543ZM579.172 543C591.418 543 602.016 550.101 607.054 560.433L616.042 556.05C609.393 542.413 595.386 533 579.172 533V543Z"
+            fill="white" mask="url(#path-2-inside-1_460_744)" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M571.018 538C544.723 566.297 507.184 584 465.509 584C423.835 584 386.295 566.297 360 538H571.018Z"
+            fill="white" />
+          <path d="M351 532C386.734 575.014 482.563 635.233 580 532" stroke="#FF7F27" stroke-width="13"
+            stroke-linecap="round" />
+          <rect x="531" y="393" width="94" height="76" rx="38" fill="#FF7F27" />
+          <path d="M466 273V329" stroke="#FF7F27" stroke-width="3" />
+          <rect x="306" y="393" width="94" height="76" rx="38" fill="#FF7F27" />
+          <rect x="341.5" y="315.5" width="249" height="249" rx="124.5" fill="white" stroke="#FF7F27"
+            stroke-width="5" />
+          <path d="M426 487C438.639 498.319 472.333 514.166 506 487" stroke="#526EE8" stroke-width="9"
+            stroke-linecap="round" />
+          <path d="M509 282.895C515.792 276.608 525.3 259.85 509 243.105" stroke="#526EE8" stroke-width="3"
+            stroke-linecap="round" />
+          <path d="M521 296.158C532.319 285.681 548.166 257.75 521 229.842" stroke="#526EE8" stroke-width="3"
+            stroke-linecap="round" />
+          <path d="M535 305C549.338 291.729 569.411 256.35 535 221" stroke="#526EE8" stroke-width="3"
+            stroke-linecap="round" />
+          <path d="M423 243.105C416.208 249.392 406.7 266.15 423 282.895" stroke="#526EE8" stroke-width="3"
+            stroke-linecap="round" />
+          <path d="M411 229.842C399.681 240.319 383.834 268.25 411 296.158" stroke="#526EE8" stroke-width="3"
+            stroke-linecap="round" />
+          <path d="M397 221C382.662 234.271 362.589 269.65 397 305" stroke="#526EE8" stroke-width="3"
+            stroke-linecap="round" />
+          <path
+            d="M402 425.482C402 437.898 411.85 425.482 424 425.482C436.15 425.482 446 437.898 446 425.482C446 413.065 436.15 403 424 403C411.85 403 402 413.065 402 425.482Z"
+            fill="#526EE8" />
+          <path
+            d="M493 425.482C493 437.898 502.85 425.482 515 425.482C527.15 425.482 537 437.898 537 425.482C537 413.065 527.15 403 515 403C502.85 403 493 413.065 493 425.482Z"
+            fill="#526EE8" />
+          <rect x="451.5" y="250.5" width="29" height="29" rx="14.5" fill="white" stroke="#FF7F27" stroke-width="3" />
+          <path
+            d="M606.581 309.547V323H603.145V293.182H606.581V304.131H606.872C607.396 302.976 608.183 302.058 609.231 301.379C610.289 300.69 611.696 300.345 613.453 300.345C614.977 300.345 616.312 300.651 617.457 301.262C618.602 301.864 619.491 302.791 620.121 304.043C620.762 305.286 621.082 306.868 621.082 308.79V323H617.646V309.023C617.646 307.246 617.185 305.873 616.263 304.902C615.351 303.922 614.084 303.432 612.463 303.432C611.337 303.432 610.328 303.67 609.435 304.145C608.551 304.621 607.853 305.315 607.338 306.227C606.833 307.14 606.581 308.246 606.581 309.547ZM631.911 293.182L631.62 314.614H628.242L627.951 293.182H631.911ZM629.931 323.233C629.213 323.233 628.596 322.976 628.082 322.461C627.568 321.947 627.31 321.33 627.31 320.612C627.31 319.894 627.568 319.278 628.082 318.763C628.596 318.249 629.213 317.991 629.931 317.991C630.649 317.991 631.266 318.249 631.78 318.763C632.295 319.278 632.552 319.894 632.552 320.612C632.552 321.088 632.43 321.525 632.188 321.923C631.955 322.321 631.639 322.641 631.241 322.884C630.853 323.116 630.416 323.233 629.931 323.233ZM654.388 293.182V323H650.777V293.182H654.388ZM667.742 323.524C666.325 323.524 665.039 323.257 663.884 322.723C662.729 322.18 661.812 321.398 661.132 320.379C660.453 319.35 660.113 318.108 660.113 316.652C660.113 315.371 660.366 314.332 660.87 313.536C661.375 312.731 662.05 312.1 662.894 311.643C663.739 311.187 664.67 310.848 665.69 310.624C666.718 310.391 667.752 310.207 668.791 310.071C670.15 309.896 671.251 309.765 672.096 309.678C672.95 309.581 673.571 309.421 673.959 309.197C674.357 308.974 674.556 308.586 674.556 308.033V307.916C674.556 306.48 674.163 305.363 673.377 304.567C672.601 303.772 671.421 303.374 669.839 303.374C668.199 303.374 666.913 303.733 665.981 304.451C665.049 305.169 664.394 305.936 664.015 306.751L660.754 305.587C661.336 304.228 662.113 303.17 663.083 302.413C664.064 301.646 665.131 301.112 666.286 300.811C667.451 300.5 668.597 300.345 669.723 300.345C670.441 300.345 671.266 300.433 672.198 300.607C673.139 300.772 674.047 301.117 674.92 301.641C675.804 302.165 676.536 302.956 677.119 304.014C677.701 305.072 677.992 306.489 677.992 308.266V323H674.556V319.972H674.382C674.149 320.457 673.76 320.976 673.217 321.529C672.673 322.083 671.95 322.554 671.047 322.942C670.145 323.33 669.043 323.524 667.742 323.524ZM668.267 320.438C669.626 320.438 670.771 320.171 671.703 319.637C672.644 319.103 673.353 318.414 673.828 317.569C674.314 316.725 674.556 315.837 674.556 314.905V311.76C674.411 311.935 674.09 312.095 673.595 312.24C673.11 312.376 672.547 312.498 671.907 312.604C671.276 312.701 670.659 312.789 670.057 312.866C669.465 312.934 668.985 312.993 668.616 313.041C667.723 313.158 666.888 313.347 666.112 313.609C665.345 313.861 664.724 314.245 664.248 314.759C663.782 315.264 663.549 315.953 663.549 316.827C663.549 318.021 663.991 318.923 664.874 319.535C665.767 320.137 666.898 320.438 668.267 320.438ZM684.264 323V300.636H687.584V304.131H687.875C688.341 302.937 689.093 302.01 690.132 301.35C691.17 300.68 692.417 300.345 693.873 300.345C695.349 300.345 696.577 300.68 697.557 301.35C698.547 302.01 699.319 302.937 699.872 304.131H700.105C700.678 302.976 701.537 302.058 702.682 301.379C703.827 300.69 705.201 300.345 706.802 300.345C708.802 300.345 710.437 300.971 711.709 302.223C712.981 303.466 713.616 305.402 713.616 308.033V323H710.18V308.033C710.18 306.383 709.729 305.203 708.826 304.495C707.923 303.786 706.861 303.432 705.638 303.432C704.065 303.432 702.847 303.907 701.983 304.859C701.119 305.8 700.687 306.994 700.687 308.44V323H697.193V307.683C697.193 306.412 696.78 305.388 695.955 304.611C695.13 303.825 694.068 303.432 692.767 303.432C691.874 303.432 691.039 303.67 690.263 304.145C689.496 304.621 688.875 305.281 688.399 306.125C687.933 306.96 687.7 307.926 687.7 309.023V323H684.264ZM752.279 302.5C751.959 301.52 751.537 300.641 751.013 299.865C750.498 299.078 749.882 298.409 749.164 297.855C748.455 297.302 747.65 296.88 746.747 296.589C745.844 296.298 744.854 296.152 743.777 296.152C742.01 296.152 740.404 296.608 738.957 297.521C737.511 298.433 736.361 299.777 735.507 301.554C734.653 303.33 734.225 305.509 734.225 308.091C734.225 310.673 734.657 312.852 735.521 314.628C736.385 316.404 737.555 317.749 739.03 318.661C740.506 319.574 742.165 320.03 744.01 320.03C745.718 320.03 747.222 319.666 748.523 318.938C749.833 318.2 750.853 317.162 751.581 315.822C752.318 314.473 752.687 312.886 752.687 311.061L753.794 311.294H744.825V308.091H756.181V311.294C756.181 313.75 755.657 315.885 754.609 317.7C753.57 319.515 752.134 320.923 750.299 321.923C748.475 322.913 746.378 323.408 744.01 323.408C741.369 323.408 739.05 322.786 737.05 321.544C735.06 320.302 733.507 318.535 732.391 316.244C731.284 313.954 730.731 311.236 730.731 308.091C730.731 305.732 731.047 303.611 731.678 301.728C732.318 299.836 733.221 298.224 734.386 296.895C735.55 295.565 736.929 294.546 738.521 293.837C740.112 293.128 741.864 292.774 743.777 292.774C745.349 292.774 746.815 293.012 748.174 293.488C749.542 293.953 750.76 294.618 751.828 295.482C752.906 296.336 753.803 297.36 754.522 298.554C755.24 299.739 755.735 301.054 756.007 302.5H752.279ZM763.301 323V300.636H766.737V323H763.301ZM765.048 296.909C764.379 296.909 763.801 296.681 763.316 296.225C762.84 295.769 762.602 295.22 762.602 294.58C762.602 293.939 762.84 293.391 763.316 292.934C763.801 292.478 764.379 292.25 765.048 292.25C765.718 292.25 766.291 292.478 766.766 292.934C767.252 293.391 767.494 293.939 767.494 294.58C767.494 295.22 767.252 295.769 766.766 296.225C766.291 296.681 765.718 296.909 765.048 296.909ZM779.612 323.524C778.194 323.524 776.908 323.257 775.753 322.723C774.598 322.18 773.681 321.398 773.002 320.379C772.322 319.35 771.982 318.108 771.982 316.652C771.982 315.371 772.235 314.332 772.739 313.536C773.244 312.731 773.919 312.1 774.763 311.643C775.608 311.187 776.54 310.848 777.559 310.624C778.588 310.391 779.621 310.207 780.66 310.071C782.019 309.896 783.12 309.765 783.965 309.678C784.819 309.581 785.44 309.421 785.829 309.197C786.227 308.974 786.426 308.586 786.426 308.033V307.916C786.426 306.48 786.032 305.363 785.246 304.567C784.47 303.772 783.29 303.374 781.708 303.374C780.068 303.374 778.782 303.733 777.85 304.451C776.918 305.169 776.263 305.936 775.884 306.751L772.623 305.587C773.205 304.228 773.982 303.17 774.953 302.413C775.933 301.646 777.001 301.112 778.156 300.811C779.32 300.5 780.466 300.345 781.592 300.345C782.31 300.345 783.135 300.433 784.067 300.607C785.008 300.772 785.916 301.117 786.79 301.641C787.673 302.165 788.406 302.956 788.988 304.014C789.57 305.072 789.862 306.489 789.862 308.266V323H786.426V319.972H786.251C786.018 320.457 785.63 320.976 785.086 321.529C784.542 322.083 783.819 322.554 782.917 322.942C782.014 323.33 780.912 323.524 779.612 323.524ZM780.136 320.438C781.495 320.438 782.64 320.171 783.572 319.637C784.513 319.103 785.222 318.414 785.698 317.569C786.183 316.725 786.426 315.837 786.426 314.905V311.76C786.28 311.935 785.96 312.095 785.465 312.24C784.979 312.376 784.416 312.498 783.776 312.604C783.145 312.701 782.528 312.789 781.927 312.866C781.334 312.934 780.854 312.993 780.485 313.041C779.592 313.158 778.757 313.347 777.981 313.609C777.214 313.861 776.593 314.245 776.117 314.759C775.651 315.264 775.418 315.953 775.418 316.827C775.418 318.021 775.86 318.923 776.743 319.535C777.636 320.137 778.767 320.438 780.136 320.438Z"
+            fill="white" />
+        </svg></span>
     </button>
     <div class="chatbot">
       <header class="flex justify-between">
         <div class="flex gap-2">
           <div class="chat-bot-img">
-            <img src="./assets/images/GIA2.png"/>
+            <img src="./assets/images/GIA2.png" />
           </div>
           <h2>Gia</h2>
 
@@ -120,7 +210,7 @@
       </ul>
       <div class="chat-input">
         <form>
-        <input type="text" placeholder="Enter a message..." class="   outline-none" required>
+          <input type="text" placeholder="Enter a message..." class="   outline-none" required>
         </form>
         <span>
           <ion-icon name="navigate-circle"></ion-icon>
@@ -128,7 +218,7 @@
       </div>
     </div>
   </div>
-</div>
+  </div>
 
   <header class="absolute inset-x-0 top-0 z-50 header">
     <nav class="flex items-center justify-between  pb-2 px-6 lg:px-[60px]" aria-label="Global">
@@ -3962,17 +4052,17 @@
           </p>
         </div>
         <div class="text-center md:border-r md:border-r-neutral-400">
-          <h6 class="text-[30px] font-bold lg:text-5xl xl:text-6xl">11</h6>
+          <h6 class="text-[30px] font-bold lg:text-5xl xl:text-6xl">50%</h6>
           <p
             class="text-[10px] font-medium tracking-widest text-gray-800 uppercase lg:text-base lg:text-md md:text-md xl:text-lg">
-            BUSINESS APPLICATION
+           LESS EFFORT
           </p>
         </div>
         <div class="text-center">
-          <h6 class="text-[30px] font-bold lg:text-5xl xl:text-6xl">1</h6>
+          <h6 class="text-[30px] font-bold lg:text-5xl xl:text-6xl">76%</h6>
           <p
             class="text-[10px] font-medium tracking-widest text-gray-800 uppercase lg:text-base lg:text-md md:text-md xl:text-lg">
-            MULTI POINT INTEGRATIONS
+            PROCESS IMPROVEMENT
           </p>
         </div>
       </div>
@@ -4019,9 +4109,246 @@
   </div>
   <!--section 2-->
 
+  <!--GainHub Integrations-->
+  <!--section-1-->
+  <div class="text-center my-[70px]  px-[20px] ">
+    <span class="text-orange-500 block text-[18px] font-semibold mb-[12px]">
+      GainHub Integrations
+    </span>
+    <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B]">
+      Streamline Your Business with Seamless Integration
+    </h2>
+  </div>
+  <div class="container-fluid lg:px-[60px] py-[80px] sm:py-[80px] md:py-[80px] lg:py-[80px] still-apps bg-[#c9d8f147]">
+    
+    <div class='  text-start still-container-apps'>
+
+      <div class='still-container-banCon-1  '>
+        <div class=" ">
+            <h3
+              class='  fw-semibold text-[25px] sm:text-[25px] md:text-[25px] lg:text-[30px] integration-heading '>
+              Discover our collaborative tech stack, seamlessly integrating with your existing apps. Boost productivity and streamline your workflow with our advanced tools. Experience the future of business efficiency with our powerful solutions.</h3>
+            <!-- <p class='quotes mb-5 lg:mb-10 text-[15px] lg:text-[16px] lg:pb-4 '>GainHub serves as an Unified
+              Business Application Platform powered with AI/ML features to enhance individual's performance in the
+              organisation and provide leaders a comprehensive overview of the performance of their business/company.</p> -->
+            <!-- <a href="">
+              <button
+                class="text-orange-500 w-[150px] h-[38px] lg:h-[38px] bg-transparent  fw-bold rounded contact-banner py-1 indexButton get-a-demo">Get a demo</button>
+            </a> -->
+  
+          </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  <!--section 1-->
+
+  <!-- section 2 -->
+  <div class="container lg:px-[50px] my-[70px]">
+    <!-- <div class="text-center mb-[44px]">
+      <span class="text-orange-500 block text-[18px] font-semibold mb-[12px]">
+        Unified
+        Business Application
+      </span>
+      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B] pb-3">
+        GainHub Platform
+      </h2>
+    </div> -->
+    <div>
+      <div class=" grid gap-x-[32px] gap-y-[30px] md:grid-cols-1 sm:grid-cols-1
+      grid-cols-1 lg:px-0  lg:grid-cols-2 ">
+        <div class="border rounded gainHub-products-integration ">
+          <div class=" bg-[#c9d8f147] px-4 gainHub-products-integration-img d-flex justify-content-center align-items-center">
+            <img src="./assets/images/gmail-integration-page.png"   class="rounded-top gainHub-product-img-integration" />
+          </div>
+          <div class="d-flex flex-column justify-center align-items-center py-3 pe-2 gainHub-products-integration-content">
+            <div>
+                    
+                <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase">INBOX</span>
+                <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold ">Gmail</p>
+                <p class="text-[16px] lg:text-[16px]  integration-heading">
+                    Gain a CRM full of buyer contacts and buyer-seller emails by automatically syncing them from Gmail.</p>
+            </div>
+          </div>
+        </div>
+        <div class="border  rounded gainHub-products-integration ">
+            <div class="d-flex justify-center align-items-center bg-[#c9d8f147] px-4 gainHub-products-integration-img">
+              <img src="./assets/images/google-calender-integration-page.png" class="rounded-top gainHub-product-img-integration" />
+            </div>
+            <div class="d-flex flex-column justify-center align-items-center py-3 pe-2 gainHub-products-integration-content ">
+              <div>
+                      
+                  <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase">Meeting</span>
+                  <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold ">Google Calendar</p>
+                  <p class="text-[16px] lg:text-[16px]  integration-heading">
+                    Know exactly how many meetings are happening and with which buyers across all your deals.</p>
+              </div>
+            </div>
+        </div>
+        <div class="border  rounded gainHub-products-integration d-flex gap-3">
+            <div class="d-flex justify-center align-items-center bg-[#c9d8f147] px-4 gainHub-products-integration-img">
+              <img src="./assets/images/zoom-integration-page.png"    class="rounded-top gainHub-product-img-integration" />
+            </div>
+            <div class="d-flex flex-column justify-center align-items-center py-3 pe-2 gainHub-products-integration-content">
+              <div>
+                      
+                  <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase">Meeting</span>
+                  <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold ">Zoom</p>
+                  <p class="text-[16px] lg:text-[16px]  integration-heading">
+                    Enable reps to focus on the call instead of capturing the contact details and their roles during the Zoom call.</p>
+              </div>
+            </div>
+        </div>
+        <div class="border  rounded gainHub-products-integration d-flex gap-3">
+            <div class="d-flex justify-center align-items-center bg-[#c9d8f147] px-4 gainHub-products-integration-img">
+              <img src="./assets/images/Microsoft-Teams-integration-page.png"    class="rounded-top gainHub-product-img-integration" />
+            </div>
+            <div class="d-flex flex-column justify-center align-items-center py-3 pe-2 gainHub-products-integration-content">
+              <div>
+                      
+                  <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase">Collaboration</span>
+                  <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold ">Microsoft Teams</p>
+                  <p class="text-[16px] lg:text-[16px]  integration-heading">
+                    Push revenue intelligence notifications to specific channels and individuals for proactive actions and collaboration that improve win-rates.</p>
+              </div>
+            </div>
+        </div>
+        <div class="border  rounded gainHub-products-integration d-flex gap-3">
+            <div class="d-flex justify-center align-items-center bg-[#c9d8f147] px-4 gainHub-products-integration-img">
+              <img src="./assets/images/whatsapp-integration-page.png"    class="rounded-top gainHub-product-img-integration" />
+            </div>
+            <div class="d-flex flex-column justify-center align-items-center py-3 pe-2 gainHub-products-integration-content">
+              <div>
+                      
+                  <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase">Communication</span>
+                  <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold ">Whatsapp</p>
+                  <p class="text-[16px] lg:text-[16px]  integration-heading">
+                    Effortlessly manage customer interactions by syncing chats and contacts, turning it into a powerful CRM for buyer-seller communications.</p>
+              </div>
+            </div>
+        </div>
+        <div class="border  rounded gainHub-products-integration d-flex gap-3">
+            <div class="d-flex justify-center align-items-center bg-[#c9d8f147] px-4 gainHub-products-integration-img">
+              <img src="./assets/images/google-meet-integration-page.png"   class="rounded-top gainHub-product-img-integration" />
+            </div>
+            <div class="d-flex flex-column justify-center align-items-center py-3 pe-2 gainHub-products-integration-content">
+              <div>
+                      
+                  <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase"> Meetings</span>
+                  <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold ">Google Meet</p>
+                  <p class="text-[16px] lg:text-[16px] integration-heading">
+                    Seamlessly manage virtual meetings by syncing calendar events and participant details, making it a powerful collaboration tool..</p>
+              </div>
+            </div>
+        </div>
+        <div class="border  rounded gainHub-products-integration d-flex gap-3">
+            <div class="d-flex justify-center align-items-center bg-[#c9d8f147] px-4 gainHub-products-integration-img">
+              <img src="./assets/images/drive-integration-page.png"   class="rounded-top gainHub-product-img-integration" />
+            </div>
+            <div class="d-flex flex-column justify-center align-items-center py-3 pe-2 gainHub-products-integration-content">
+              <div>
+                      
+                  <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase">Storage</span>
+                  <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold ">Google Drive </p>
+                  <p class="text-[16px] lg:text-[16px]  integration-heading">
+                    Easily organize and access documents with automatic file syncing, turning it into a comprehensive file management solution.</p>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- section 2 -->
+  <!-- <div class="container-fluid lg:px-[60px] my-[70px] still-apps">
+    <div class="text-center mb-[70px] lg:mb-[50px]  px-[20px] ">
+      <span class="text-orange-500 block text-[18px] font-semibold mb-[12px]">
+        GainHub Integrations
+      </span>
+      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B]">
+        Streamline Your Business with Seamless Integration
+      </h2>
+    </div>
+    <div class='  text-start still-container-apps'>
+
+      <div class='still-container-banCon-1  '>
+        <div class="lg:pe-5  ">
+          <p class='quotes mb-1 text-[15px] lg:text-[16px] '>
+            <span class=" font-bold text-[#4B4B4B] text-[16px] lg:text-[17px]">Enhanced
+              Productivity: </span> Integrating various business applications to automate workflows and reduce manual
+            efforts, boosting overall productivity.
+          </p>
+          <p class='quotes mb-1  text-[15px] lg:text-[16px] '>
+            <span class=" font-bold text-[#4B4B4B] text-[16px] lg:text-[17px]">Improved Data
+              Accuracy: </span> Ensuring real-time data synchronization across systems, reducing errors and maintaining
+            data consistency
+          </p>
+          <p class='quotes mb-1 text-[15px] lg:text-[16px] '>
+            <span class=" font-bold text-[#4B4B4B] text-[16px] lg:text-[17px]">Scalability: </span> Easily
+            scaling your operations by integrating applications without disrupting existing workflows.
+          </p>
+          <p class='quotes text-[15px] lg:text-[16px] '>
+            <span class=" font-bold text-[#4B4B4B] text-[16px] lg:text-[17px]">Better Decision-Making: </span> Gaining a unified view of your data from multiple sources, enabling better
+            analytics and informed decision-making.
+          </p>
+
+        </div>
+        <div class="my-4">
+          <a href="./integration.html">
+            <button
+              class="text-white w-[150px] h-[38px] lg:h-[38px] bg-orange-500 fw-bold rounded contact-banner py-1 indexButton">Learn More...</button>
+          </a>
+        </div>
+      </div>
+      <div class=' still-container-banCon-2 apps '>
+        <div class="apps-grid ">
+          <div>
+            <img src="./assets/images/gmail.jpg" width="150px" height="100px" />
+          </div>
+          <div>
+            <img src="./assets/images/gmeet.png" width="150px" height="100px" />
+          </div>
+
+          <div>
+            <img src="./assets/images/google-drive.png" width="150px" height="100px" />
+          </div>
+        </div>
+        <div class="apps-grid apps-grid-2 mt-2">
+          <div class="app-image-2">
+
+          </div>
+          <div class="app-image-2">
+
+          </div>
+          <div>
+            <img src="./assets/images/google-calendar.png" width="150px" height="50px" />
+            
+          </div>
+          <div>
+            <img src="./assets/images/microsoft-teams.png" width="200px" height="50px" />
+            
+          </div>
+          <div>
+            <img src="./assets/images/whatsapp.png" width="150px" height="100px" />
+            
+          </div>
+
+        </div>
+        <div class="apps-grid mt-2">
+          <div>
+            <img src="./assets/images/zoom.png" width="150px" height="100px" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!--GainHub Integrations-->
+
   <!-- Gainhub Platform -->
-  <div class="lg:px-[60px] mt-[50px]">
-    <div class="text-center mb-[44px]">
+  <div class="lg:px-[60px] ">
+    <div class="text-center mb-[70px]">
       <span class="text-orange-500 block text-[18px] font-semibold mb-[12px]">
         Unified
         Business Application
@@ -4229,14 +4556,14 @@
         <img src="./assets/images/vimkes-removebg-preview.png" width="150px" />
       </div>
       <div class="d-flex justify-content-center align-items-center ">
-        <img src="./assets/images/xpand-3.png" width="150px" />
+        <img src="./assets/images/stat-class.png" width="150px" />
       </div>
 
     </div>
     <div
-      class="grid lg:grid-cols-3 lg:col-gap-6 md:col-gap-5 ref-img  md:grid-cols-2 grid-cols-1 mt-1 lg:px-[250px] pt-[50px] px-[50px]">
+      class="grid lg:grid-cols-4 col-gap-5 md:col-gap-5 ref-img  md:grid-cols-2 grid-cols-1 mt-1 lg:px-[250px] pt-[50px] px-[50px]">
       <div class="d-flex justify-content-center align-items-center ">
-        <img src="./assets/images/logo-light.png" width="150px" />
+        <img src="./assets/images/oxford.png" width="150px" />
       </div>
       <div class="d-flex justify-content-center align-items-center ">
         <img src="./assets/images/concitus.png" width="150px" />
@@ -4244,6 +4571,7 @@
       <div class="d-flex justify-content-center align-items-center ">
         <img src="./assets/images/qnet.png" width="150px" />
       </div>
+      
     </div>
   </div>
   <!-- ====== stats Ends-->
