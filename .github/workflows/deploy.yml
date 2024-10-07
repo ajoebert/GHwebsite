@@ -1,0 +1,25 @@
+name: Deploy to Azure Storage
+ 
+# Trigger the workflow on push to the main branch
+on:
+  push:
+    branches:
+      - main  # Replace this with your default branch if it's different
+ 
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+ 
+      # Step 2: Deploy static website files to Azure Storage using the connection string
+      - name: Deploy to Azure Storage
+        uses: Azure/azure-storage-blob-upload@v1
+        with:
+          connection-string: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}  # Use the secret stored in GitHub
+          container: '$web'  # The $web container for static website hosting
+          source: '.'  # Root directory of the repository (where your files are located)
+          destination: '/'  # Deploy files to the root of the $web container
