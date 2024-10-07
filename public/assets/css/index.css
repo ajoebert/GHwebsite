@@ -137,6 +137,27 @@
 }
 
 /* products */
+
+/* certificates */
+#cert-allign {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cert-container {
+    display: flex;
+    align-items: center;
+}
+.cert-title {
+    font-size: 24px;
+    color: #ff6600;
+    margin-right: 10px;
+}
+.cert-icon {
+    width: 30px;
+    height: 30px;
+}
 /* modals */
 .model-inner{
     display:none !important;
