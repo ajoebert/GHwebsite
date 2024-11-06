@@ -209,6 +209,34 @@ def e_learning():
 def multi_level_marketing():
     return render_template('multi_level_marketing.html')
 
+@app.route('/rfq_management')
+def rfq_management():
+    return render_template('rfq_management.html')
+
+@app.route('/oms')
+def oms():
+    return render_template('oms.html')
+
+@app.route('/workflow_management')
+def workflow_management():
+    return render_template('workflow_management.html')
+
+@app.route('/lms_institutions')
+def lms_institutions():
+    return render_template('lms_institutions.html')
+
+@app.route('/purchase_management')
+def purchase_management():
+    return render_template('purchase_management.html')
+
+@app.route('/travel_management')
+def travel_management():
+    return render_template('travel_management.html')
+
+@app.route('/network_management')
+def network_management():
+    return render_template('network_management.html')
+
 @app.route('/careers')
 def carrers():
     return render_template('carrers.html')
@@ -240,7 +268,6 @@ def automotive():
 @app.route('/sectorRetail')
 def sectorRetail():
     return render_template('sectorRetail.html')
-
 
 if __name__ == '__main__':
     app.run(debug=True,port=8000)

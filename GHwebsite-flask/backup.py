@@ -8,7 +8,7 @@ import psycopg2
 # from opencensus.trace.tracer import Tracer
 # from opencensus.ext.flask.flask_middleware import FlaskMiddleware
 #static folder path
-app = Flask(__name__, static_folder='/home/website/GHwebsite/GHwebsite-flask/static')
+app = Flask(__name__)
 
 # Database connection settings
 DB_HOST = '172.188.42.27'
@@ -208,6 +208,34 @@ def e_learning():
 @app.route('/multi_level_marketing')
 def multi_level_marketing():
     return render_template('multi_level_marketing.html')
+
+@app.route('/rfq_management')
+def rfq_management():
+    return render_template('rfq_management.html')
+
+@app.route('/oms')
+def oms():
+    return render_template('oms.html')
+
+@app.route('/workflow_management')
+def workflow_management():
+    return render_template('workflow_management.html')
+
+@app.route('/lms_institutions')
+def lms_institutions():
+    return render_template('lms_institutions.html')
+
+@app.route('/purchase_management')
+def purchase_management():
+    return render_template('purchase_management.html')
+
+@app.route('/travel_management')
+def travel_management():
+    return render_template('travel_management.html')
+
+@app.route('/network_management')
+def network_management():
+    return render_template('network_management.html')
 
 @app.route('/careers')
 def carrers():
