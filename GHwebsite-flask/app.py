@@ -7,7 +7,7 @@ from opencensus.ext.azure.trace_exporter import AzureExporter
 from opencensus.trace.samplers import ProbabilitySampler
 from opencensus.trace.tracer import Tracer
 from opencensus.ext.flask.flask_middleware import FlaskMiddleware
-
+#static folder path
 app = Flask(__name__, static_folder='/home/website/GHwebsite/GHwebsite-flask/static')
 ##############################
 # Database connection settings
