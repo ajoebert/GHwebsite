@@ -9,7 +9,7 @@ from opencensus.trace.tracer import Tracer
 from opencensus.ext.flask.flask_middleware import FlaskMiddleware
 #static folder path
 app = Flask(__name__, static_folder='/home/website/GHwebsite/GHwebsite-flask/static')
-##############################
+
 # Database connection settings
 DB_HOST = '172.188.42.27'
 DB_NAME = 'dev'
