@@ -11,6 +11,15 @@
 
   gtag('config', 'G-5HWNDM8HZT');
 </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EKD6HFC8FK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EKD6HFC8FK');
+</script>
   <title>HR Management</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -65,6 +74,31 @@
     }
 
   </style>
+
+<!--tracking part-->
+<script type="text/javascript">
+    var appInsights = window.appInsights || function (config) {
+        function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } }
+        var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.async = 1, s.src = config.url || "https://>        instrumentationKey: "61b0aded-11b2-4181-ab29-fbe0c44763fd"  // Replace with your Instrumentation Key
+    });
+
+    window.appInsights = appInsights;
+
+    // Track automatic page views
+    appInsights.trackPageView();
+</script>
+<script>
+    // Fetch user's public IP address and send it to Application Insights
+    fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+            // Log the IP address as a custom event in Application Insights
+            appInsights.trackEvent({
+                name: 'VisitorIPAddress',
+                properties: { ip: data.ip }
+            });
+        });
+</script>
 </head>
 
 <body>

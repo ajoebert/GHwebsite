@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Website Analytics Dashboard</h1>
+        
+        <div>
+            <h2>Summary</h2>
+            <p>Total Visitors: <span id="total-visitors">{{ total_visitors }}</span></p>
+            <p>Unique IPs: <span id="unique_ips">{{ unique_ips }}</span></p>
+            <p>Page Views: <span id="page_views">{{ page_views }}</span></p>
+        </div>
+
+        <div>
+            <h2>Visitor Region Analytics</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Country/Region</th>
+                        <th>Visitor Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for region, count in region_data %}
+                    <tr>
+                        <td>{{ region }}</td>
+                        <td>{{ count }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <h2>Visitor IPs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>IP Address</th>
+                        <th>Request Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for ip, count in ip_data %}
+                    <tr>
+                        <td>{{ ip }}</td>
+                        <td>{{ count }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
