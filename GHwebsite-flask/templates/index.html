@@ -183,9 +183,9 @@
         appInsights.trackEvent({ name: "ClickEvent", properties: { id: event.target.id, text: event.target.innerText } });
     });
 </script>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     !function(T,l,y){var S=T.location,k="script",D="instrumentationKey",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!0,m="onunload",v="addEventListener",h="name",a="src",q="type",u="track",x="TrackPage",A="TrackEvent",G="start",L="stop",b="TrackMetric",H="TrackTrace",E="TrackDependencyData",o="TrackException",j="config",c="properties",p="storage",F="global",k=F+"Key",Q=F+"Item",X="Device.",K=y.trackPageLoad||!0,R=function(g,f){return function(e){f[g]=e}},W=T.console||{log:function(){},error:function(){}},B=d[v]&&function(a){a!=A&&a!=x&&a!=b&&a!=H&&a!=o&&a!=p&&a!=p&&a!=E&&W.log(a+" feature is disabled by the user!");a=d[j];return!!a||g[d[I]]&&delete d[w]},D={},M=d[h],F=d[a],O=d[q],Z=[];return function(g){var f=[],x=d.configuration||{key:""};x[D]=y;T[v]&&(W&&W.error&&W.error(g),T[v](m,function(){try{(e+"."+A+"."+H+"."+o+"."+x.G+",ai."+x.w+","+d.a+","+x[b]).split(x.f)}}catch(x){}},!1)),d[a]=g,G=(d[d.c=x],{name:h,priority:1.0,f:[{url:x.I,o:function(g,f){for(d.a="crossOrigin",d.h=w||!0,d.h&&(d.crossOrigin=d.b,b==d.name.toLowerCase()),d.src="wss"}(W.v)},f.h(h=d),h:!0,f:{}}]})}(),F[d],k=j,k=d[w],T[h](x,D.a.name,m.a||g)}(window,document,{name:"appInsights",config:{instrumentationKey:"61b0aded-11b2-4181-ab29-fbe0c44763fd"}});appInsights.trackPageView();
-</script>
+</script> -->
 
 </head>
 
@@ -279,13 +279,13 @@
   </div>
   </div>
 
-  <header class="absolute inset-x-0 top-0 z-50 header" style="height: 60px; background-color: #FFFFFF; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+  <header class="absolute inset-x-0 top-0 z-50 header" style="height: 65px; background-color: #FFFFFF; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: fixed;">
     <nav class="flex items-center justify-between  pb-2 px-6 lg:px-[60px]" aria-label="Global">
       <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
+        <!-- <a href="#" class="-m-1.5 p-1.5"> -->
           <span class="sr-only">Your Company</span>
           <a href="/">
-            <div class="mt-[25px] mb-0 w-auto">
+            <div class="mt-[17px] mb-0 w-auto">
               <svg height="50px" width="280.72px" viewBox="0 0 525 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <mask id="path-1-outside-1_52_171" maskUnits="userSpaceOnUse" x="91" y="10" width="210" height="44"
                   fill="black">
