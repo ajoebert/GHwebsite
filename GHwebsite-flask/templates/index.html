@@ -119,6 +119,32 @@
     }
 
   </style>
+  <!-- Add the following CSS to create the scrolling effect -->
+<style>
+  #image-scroll-wrapper {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+  }
+  
+  #image-scroll {
+      display: flex;
+      animation: scroll-left 30s linear infinite;
+  }
+  
+  #image-scroll img {
+      margin-right: 50px; /* Space between images */
+  }
+
+  @keyframes scroll-left {
+      0% {
+          transform: translateX(100%);
+      }
+      100% {
+          transform: translateX(-100%);
+      }
+  }
+</style>
   <script src="{{ url_for('static', filename='js/contact.js') }}" defer></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -4135,7 +4161,7 @@
       <span class="text-orange-500 block text-[18px] font-semibold mb-[12px]" style="font-family: 'Poppins', sans-serif;">
         Still Paying For Multiple Applications?
       </span>
-      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B]" style="font-family: 'Poppins', sans-serif;">
+      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#3D3D3D]" style="font-family: 'Poppins', sans-serif;">
         GainHub does it all in one place- for a price of one!
       </h2>
     </div>
@@ -4146,17 +4172,17 @@
       <div class='text-area ban-con-1 still-container-banCon '>
         <div class="lg:pe-5  ">
 
-          <p class='quotes mb-3 lg:mb-20 text-[14px] lg:text-[16px] ' style="font-family: 'Poppins', sans-serif;">GainHub offers a comprehensive solution to
+          <p class='quotes mb-3 lg:mb-20 text-[14px] lg:text-[16px] ' style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 400;">GainHub offers a comprehensive solution to
             streamline organizational activities, eliminating the need for multiple software subscriptions. With
             GainHub, you can create, share, and track activities across various departments, all within a single
             platform. Whether it's project management, task assignment, document sharing, or client onboarding, GainHub
             provides a wide range of functionalities to meet your needs.</p>
-          <p class='quotes mb-3 lg:mb-20 text-[14px] lg:text-[16px] ' style="font-family: 'Poppins', sans-serif;">One
+          <p class='quotes mb-3 lg:mb-20 text-[14px] lg:text-[16px] ' style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 400;">One
             of the key features of GainHub is its ability to integrate with popular communication channels like WhatsApp
             and email, allowing for seamless document sharing and communication with both employees and clients.
             Additionally, GainHub enables automated reminders,
             ensuring that tasks are completed on time and revenue-generating activities stay on track.</p>
-          <p class='quotes mb-3 lg:mb-20 text-[14px] lg:text-[16px] ' style="font-family: 'Poppins', sans-serif;">By
+          <p class='quotes mb-3 lg:mb-20 text-[14px] lg:text-[16px] ' style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 400;">By
             consolidating all these features into one platform, GainHub simplifies workflow management, enhances
             collaboration, and ultimately boosts productivity and profitability for your organization. Say goodbye to
             the hassle of managing multiple Application subscriptions
@@ -4172,7 +4198,7 @@
     <span class="text-orange-500 block text-[20px] font-semibold mb-[12px]" style="font-family: 'Poppins', sans-serif;">
       GainHub AI
     </span>
-    <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B]" style="font-family: 'Poppins', sans-serif;">
+    <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#3D3D3D]" style="font-family: 'Poppins', sans-serif;">
       Explore how GainHub is leveraging cutting-edge AI technologies to drive innovation and empower businesses with smarter, more efficient solutions.
     </h2>
   </div>
@@ -4183,7 +4209,7 @@
         Unified
         Business Application
       </span>
-      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B] pb-3">
+      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#3D3D3D] pb-3">
         GainHub Platform
       </h2>
     </div> -->
@@ -4196,8 +4222,8 @@
           </div>
           <div class="d-flex flex-column justify-center align-items-center py-3 pe-2 gainHub-products-integration-content">
             <div>
-                <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Hyper-Personalized User Experiences</p>
-                <p class="text-[14px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;">
+                <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">Hyper-Personalized User Experiences</p>
+                <p class="text-[14px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 400;">
                   GainHub uses AI to analyze user behavior and preferences, dynamically personalizing interfaces and content to enhance engagement and productivity.</p>
                   <!-- <p class="text-[16px] lg:text-[16px]  integration-heading">
                     GainHub harnesses AI to deliver tailored experiences for each user. By analyzing behavior, preferences, and interaction patterns, the platform adapts interfaces, content, and recommendations dynamically, fostering deeper engagement and productivity.</p> -->
@@ -4212,8 +4238,8 @@
               <div>
                       
                   <!-- <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase">Meeting</span> -->
-                  <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Automated Data Integration and Real-Time Insights</p>
-                  <p class="text-[14px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;">
+                  <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">Automated Data Integration and Real-Time Insights</p>
+<p class="text-[14px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 400;">
                     GainHub's AI pipelines automate data collection, offering real-time insights and unified views for faster, smarter, data-driven decisions.</p>
               </div>
             </div>
@@ -4226,8 +4252,8 @@
               <div>
                       
                   <!-- <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase">Meeting</span> -->
-                  <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Enhanced Security with Predictive Threat Detection</p>
-                  <p class="text-[14px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;">
+                  <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">Enhanced Security with Predictive Threat Detection</p>
+<p class="text-[14px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 400;">
                     GainHub's AI-driven security uses predictive analytics to detect threats, safeguard data, and ensure compliance, protecting what matters most.</p>
               </div>
             </div>
@@ -4240,8 +4266,8 @@
               <div>
                       
                   <!-- <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase">Collaboration</span> -->
-                  <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Intelligent Automation and Workflow Optimization</p>
-                  <p class="text-[14px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;">
+                  <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">Intelligent Automation and Workflow Optimization</p>
+<p class="text-[14px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 400;">
                     GainHub's AI automates tasks, optimizes workflows, and provides actionable recommendations, boosting efficiency and freeing teams for strategic goals.</p>
               </div>
             </div>
@@ -4254,8 +4280,8 @@
               <div>
                       
                   <!-- <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase">Communication</span> -->
-                  <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Increased Use of Natural Language Processing (NLP)</p>
-                  <p class="text-[14px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;">
+                  <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">Increased Use of Natural Language Processing (NLP)</p>
+<p class="text-[14px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 400;">
                     GainHub's NLP tools enable intuitive voice and chat interfaces for analytics and support, ensuring seamless and accessible user interactions.</p>
               </div>
             </div>
@@ -4268,8 +4294,8 @@
               <div>
 <!--                       
                   <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase"> Meetings</span> -->
-                  <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Predictive Analytics for Proactive Decision-Making</p>
-                  <p class="text-[16px] lg:text-[16px] integration-heading" style="font-family: 'Poppins', sans-serif;">
+                  <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">Predictive Analytics for Proactive Decision-Making</p>
+<p class="text-[14px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 400;">
                     GainHub's AI predicts trends, needs, and risks, enabling proactive decisions and actionable foresight to help businesses stay ahead.</p>
               </div>
             </div>
@@ -4282,8 +4308,8 @@
               <div>
                       
                   <!-- <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase">Storage</span> -->
-                  <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Faster Deployment and Self-Learning Systems</p>
-                  <p class="text-[14px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;">
+                  <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">Faster Deployment and Self-Learning Systems</p>
+<p class="text-[14px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 400;">
                     GainHub's self-learning capabilities enable rapid implementation, evolving with user interactions to adapt and optimize for changing business needs.</p>
               </div>
             </div>
@@ -4297,8 +4323,8 @@
             <div>
                     
                 <!-- <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase">Inbox</span> -->
-                <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Unified Platforms Driven by AI-Enabled Integrations</p>
-                <p class="text-[14px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;">
+                <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">Unified Platforms Driven by AI-Enabled Integrations</p>
+                <p class="text-[14px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 400;"></p>
                   GainHub leverages AI to integrate applications seamlessly, streamlining workflows, reducing complexity, and providing a unified view of your business.</p>
             </div>
           </div>
@@ -4342,7 +4368,7 @@
     <span class="text-orange-500 block text-[20px] font-semibold mb-[12px]" style="font-family: 'Poppins', sans-serif;">We are in good company.
       GainHub Integrations
     </span>
-    <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B]" style="font-family: 'Poppins', sans-serif;">
+    <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#3D3D3D]" style="font-family: 'Poppins', sans-serif;">
       Streamline Your Business with Seamless Integration
     </h2>
   </div>
@@ -4378,7 +4404,7 @@
         Unified
         Business Application
       </span>
-      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B] pb-3">
+      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#3D3D3D] pb-3">
         GainHub Platform
       </h2>
     </div> -->
@@ -4393,7 +4419,7 @@
             <div>
                     
                 <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase" style="font-family: 'Poppins', sans-serif;">INBOX</span>
-                <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Gmail</p>
+                <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">Gmail</p>
                 <p class="text-[16px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;">
                     Gain a CRM full of buyer contacts and buyer-seller emails by automatically syncing them from Gmail.</p>
             </div>
@@ -4407,7 +4433,7 @@
               <div>
                       
                   <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase" style="font-family: 'Poppins', sans-serif;">Meeting</span>
-                  <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Google Calendar</p>
+                  <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">Google Calendar</p>
                   <p class="text-[16px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;">
                     Know exactly how many meetings are happening and with which buyers across all your deals.</p>
               </div>
@@ -4421,7 +4447,7 @@
               <div>
                       
                   <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase" style="font-family: 'Poppins', sans-serif;">Meeting</span>
-                  <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Zoom</p>
+                  <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">Zoom</p>
                   <p class="text-[16px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;">
                     Enable reps to focus on the call instead of capturing the contact details and their roles during the Zoom call.</p>
               </div>
@@ -4435,7 +4461,7 @@
               <div>
                       
                   <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase" style="font-family: 'Poppins', sans-serif;">Collaboration</span>
-                  <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Microsoft Teams</p>
+                  <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">Microsoft Teams</p>
                   <p class="text-[16px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;">
                     Push revenue intelligence notifications to specific channels and individuals for proactive actions and collaboration that improve win-rates.</p>
               </div>
@@ -4449,7 +4475,7 @@
               <div>
                       
                   <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase" style="font-family: 'Poppins', sans-serif;">Communication</span>
-                  <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Whatsapp</p>
+                  <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">Whatsapp</p>
                   <p class="text-[16px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;">
                     Effortlessly manage customer interactions by syncing chats and contacts, turning it into a powerful CRM for buyer-seller communications.</p>
               </div>
@@ -4463,7 +4489,7 @@
               <div>
                       
                   <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase" style="font-family: 'Poppins', sans-serif;"> Meetings</span>
-                  <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Google Meet</p>
+                  <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">Google Meet</p>
                   <p class="text-[16px] lg:text-[16px] integration-heading" style="font-family: 'Poppins', sans-serif;">
                     Seamlessly manage virtual meetings by syncing calendar events and participant details, making it a powerful collaboration tool..</p>
               </div>
@@ -4477,7 +4503,7 @@
               <div>
                       
                   <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase" style="font-family: 'Poppins', sans-serif;">Storage</span>
-                  <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Google Drive </p>
+                  <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Google Drive </p>
                   <p class="text-[16px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;">
                     Easily organize and access documents with automatic file syncing, turning it into a comprehensive file management solution.</p>
               </div>
@@ -4492,7 +4518,7 @@
             <div>
                     
                 <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase" style="font-family: 'Poppins', sans-serif;">Inbox</span>
-                <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Outlook</p>
+                <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">Outlook</p>
                 <p class="text-[16px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;">
                   Use the Outlook API to automatically retrieve meeting details, attendees, and sync with CRM systems to streamline contact capture.</p>
             </div>
@@ -4507,7 +4533,7 @@
           <div>
                   
               <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase" style="font-family: 'Poppins', sans-serif;">Routing</span>
-              <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Azure Maps</p>
+              <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">Azure Maps</p>
               <p class="text-[16px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;">
                 Use the Azure Maps API to automatically retrieve location data, geocode addresses, and integrate maps into your applications for tracking.</p>
           </div>
@@ -4522,7 +4548,7 @@
         <div>
                 
             <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase" style="font-family: 'Poppins', sans-serif;">Profile</span>
-            <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">LinkedIN</p>
+            <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">LinkedIN</p>
             <p class="text-[16px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;">
               Use the LinkedIn API to automatically retrieve user profiles, job roles, and company details, integrating with CRMs for streamlined data capture.</p>
         </div>
@@ -4537,7 +4563,7 @@
       <div>
               
           <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase" style="font-family: 'Poppins', sans-serif;">Payment</span>
-          <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Razorpay</p>
+          <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">Razorpay</p>
           <p class="text-[16px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;">
             Use the Razorpay API to automate payment processing, manage transactions, and integrate billing features into your applications for efficiency.</p>
       </div>
@@ -4553,7 +4579,7 @@
     <div>
             
         <span class="inbox-style text-[#6734a8] rounded-[20px] px-2 py-1 text-[13px] font-semibold bg-[#ede6f4] uppercase" style="font-family: 'Poppins', sans-serif;">Storage</span>
-        <p class="text-black fw-semibold mt-3 mb-2 text-[24px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;">Onedrive</p>
+        <p class="text-black fw-semibold mt-3 mb-2 text-[20px] integration-heading font-bold " style="font-family: 'Poppins', sans-serif;color: #0c0c0c;font-weight: 600;">Onedrive</p>
         <p class="text-[16px] lg:text-[16px]  integration-heading" style="font-family: 'Poppins', sans-serif;">
           Use the OneDrive API to automatically upload files, manage storage, and share documents, enhancing collaboration and data accessibility in applications.</p>
     </div>
@@ -4569,7 +4595,7 @@
       <span class="text-orange-500 block text-[18px] font-semibold mb-[12px]">
         GainHub Integrations
       </span>
-      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B]">
+      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#3D3D3D]">
         Streamline Your Business with Seamless Integration
       </h2>
     </div>
@@ -4578,21 +4604,21 @@
       <div class='still-container-banCon-1  '>
         <div class="lg:pe-5  ">
           <p class='quotes mb-1 text-[15px] lg:text-[16px] '>
-            <span class=" font-bold text-[#4B4B4B] text-[16px] lg:text-[17px]">Enhanced
+            <span class=" font-bold text-[#3D3D3D] text-[16px] lg:text-[17px]">Enhanced
               Productivity: </span> Integrating various business applications to automate workflows and reduce manual
             efforts, boosting overall productivity.
           </p>
           <p class='quotes mb-1  text-[15px] lg:text-[16px] '>
-            <span class=" font-bold text-[#4B4B4B] text-[16px] lg:text-[17px]">Improved Data
+            <span class=" font-bold text-[#3D3D3D] text-[16px] lg:text-[17px]">Improved Data
               Accuracy: </span> Ensuring real-time data synchronization across systems, reducing errors and maintaining
             data consistency
           </p>
           <p class='quotes mb-1 text-[15px] lg:text-[16px] '>
-            <span class=" font-bold text-[#4B4B4B] text-[16px] lg:text-[17px]">Scalability: </span> Easily
+            <span class=" font-bold text-[#3D3D3D] text-[16px] lg:text-[17px]">Scalability: </span> Easily
             scaling your operations by integrating applications without disrupting existing workflows.
           </p>
           <p class='quotes text-[15px] lg:text-[16px] '>
-            <span class=" font-bold text-[#4B4B4B] text-[16px] lg:text-[17px]">Better Decision-Making: </span> Gaining a unified view of your data from multiple sources, enabling better
+            <span class=" font-bold text-[#3D3D3D] text-[16px] lg:text-[17px]">Better Decision-Making: </span> Gaining a unified view of your data from multiple sources, enabling better
             analytics and informed decision-making.
           </p>
 
@@ -4652,11 +4678,11 @@
   <!-- Gainhub Platform -->
   <div class="lg:px-[60px] ">
     <div class="text-center mb-[70px]">
-      <span class="text-orange-500 block text-[18px] font-semibold mb-[12px]" style="font-family: 'Poppins', sans-serif;">
+      <span class="text-orange-500 block text-[20px] font-semibold mb-[12px]" style="font-family: 'Poppins', sans-serif;">
         Unified
         Business Application
       </span>
-      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B] pb-3" style="font-family: 'Poppins', sans-serif;">
+      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#3D3D3D] pb-3" style="font-family: 'Poppins', sans-serif;">
         GainHub Platform
       </h2>
     </div>
@@ -4668,7 +4694,7 @@
             <img src="./static/images/direct sales.png " height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class=" px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Direct Sales</p>
+            <p class="text-[#556EE6 fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Direct Sales</p>
             <p class="text-[15px] lg:text-[16px] pb-5" style="font-family: 'Poppins', sans-serif;">It is a cloud-based Direct Sales-Ops with built-in
               email, lead scoring, task tracking, pipeline management, CPQ and OMS that helps sales team to close deals
               faster</p>
@@ -4684,7 +4710,7 @@
             <img src="./static/images/sector_retaill.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Retail Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Retail Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5 " style="font-family: 'Poppins', sans-serif;">Retail management involves overseeing operations
               merchandising, and customer service in retail businesses.</p>
             <div class="gainHub-button">
@@ -4699,7 +4725,7 @@
             <img src="./static/images/manufacturing1.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Field Force Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Field Force Management</p>
             <p class="text-[15px]  lg:text-[16px] pb-5 " style="font-family: 'Poppins', sans-serif;">Field force management involves optimizing the
               deployment and coordination of mobile workers.</p>
             <div class="gainHub-button">
@@ -4714,7 +4740,7 @@
             <img src="./static/images/service1.jpg" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Service Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Service Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5 " style="font-family: 'Poppins', sans-serif;">Transform the way you deliver exceptional service with
               our
               comprehensive Service Management solution.</p>
@@ -4730,7 +4756,7 @@
             <img src="./static/images/project.jpg" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Project Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Project Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5" style="font-family: 'Poppins', sans-serif;">Project management is the practice of planning,
               organizing, directing, and controlling resources to achieve specific goals.</p>
             <div class="gainHub-button">
@@ -4745,7 +4771,7 @@
             <img src="./static/images/knowledge.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Knowledge Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Knowledge Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5" style="font-family: 'Poppins', sans-serif;">An easy-to-use digital solution for Knowledge Management
               in an organization to organize, store and disseminate information.</p>
             <div class="gainHub-button">
@@ -4760,7 +4786,7 @@
             <img src="./static/images/manufacturing.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold " style="font-family: 'Poppins', sans-serif;">Manufacturing Management</p>
+            <p class="text-[#556EE6] fw-semibold " style="font-family: 'Poppins', sans-serif;">Manufacturing Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5" style="font-family: 'Poppins', sans-serif;">Manufacturing management oversees production processes,
               quality control, and optimization for efficient manufacturing operations.</p>
             <div class="gainHub-button">
@@ -4775,7 +4801,7 @@
             <img src="./static/images/inventory1.jpg" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Inventory Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Inventory Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5 " style="font-family: 'Poppins', sans-serif;">Inventory management involves overseeing the storage,
               tracking, and control of goods or materials within a business.</p>
             <div class="gainHub-button">
@@ -4790,7 +4816,7 @@
             <img src="./static/images/HRMS2.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">HR Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">HR Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5" style="font-family: 'Poppins', sans-serif;">An HR management system automates tasks like
               performance, and compliance for organizations.​</p>
             <div class="gainHub-button">
@@ -4805,7 +4831,7 @@
             <img src="./static/images/LMS1.jpg" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;" >E-Learning for Organisation</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;" >E-Learning for Organisation</p>
             <p class="text-[15px] lg:text-[16px] pb-5" style="font-family: 'Poppins', sans-serif;">Unlock the power of knowledge with our advanced Learning
               Management System (LMS).</p>
             <div class="gainHub-button">
@@ -4822,7 +4848,7 @@
             <img src="./static/images/LMS-institutions.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">LMS for Institutions</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">LMS for Institutions</p>
             <p class="text-[15px] lg:text-[16px] pb-5" style="font-family: 'Poppins', sans-serif;">A Learning Management System (LMS) for institutions facilitates the delivery, tracking, and management of educational content, assessments, and student progress in a centralized platform.</p>
             <div class="gainHub-button">
               <a href="/lms_institutions"><button
@@ -4837,7 +4863,7 @@
             <img src="./static/images/MLM.jpg" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Multi-Level Marketing</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Multi-Level Marketing</p>
             <p class="text-[15px] lg:text-[16px] pb-5" style="font-family: 'Poppins', sans-serif;">Multi-level marketing involves selling products or
               services through a network of distributors who earn commissions on sales.</p>
             <div class="gainHub-button">
@@ -4853,7 +4879,7 @@
             <img src="./static/images/rfq.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">RFQ Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">RFQ Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5" style="font-family: 'Poppins', sans-serif;">Request for Quotation (RFQ) Management involves soliciting, evaluating, and selecting supplier bids to optimize procurement efficiency and cost savings.</p>
             <div class="gainHub-button">
               <a href="/rfq_management"><button
@@ -4868,7 +4894,7 @@
             <img src="./static/images/oms-1.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">OMS</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">OMS</p>
             <p class="text-[15px] lg:text-[16px] pb-5" style="font-family: 'Poppins', sans-serif;">Order Management Service (OMS) involves tracking, processing, and fulfilling customer orders efficiently, ensuring accurate inventory, timely delivery, and customer satisfaction.</p>
             <div class="gainHub-button">
               <a href="/oms"><button
@@ -4883,7 +4909,7 @@
             <img src="./static/images/workflow management.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Workflow Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Workflow Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5" style="font-family: 'Poppins', sans-serif;">Workflow Management involves designing, automating, and optimizing business processes to improve efficiency, coordination, and task completion within an organization.</p>
             <div class="gainHub-button">
               <a href="/workflow_management"><button
@@ -4898,7 +4924,7 @@
             <img src="./static/images/purchase.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Purchase Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Purchase Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5" style="font-family: 'Poppins', sans-serif;">Purchase management involves overseeing the procurement process, including sourcing, ordering, and acquiring goods or services to ensure cost-effective and timely supply.</p>
             <div class="gainHub-button">
               <a href="/purchase_management"><button
@@ -4913,7 +4939,7 @@
             <img src="./static/images/travel.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Travel Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Travel Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5" style="font-family: 'Poppins', sans-serif;">Travel management involves planning, booking, and organizing business or personal travel, ensuring cost efficiency, compliance, and traveler safety.</p>
             <div class="gainHub-button">
               <a href="/travel_management"><button
@@ -4928,7 +4954,7 @@
             <img src="./static/images/nwmanage.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Network Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Network Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5" style="font-family: 'Poppins', sans-serif;">Network management involves monitoring, maintaining, and optimizing a computer network’s performance, security, and reliability to ensure seamless connectivity.</p>
             <div class="gainHub-button">
               <a href="/network_management"><button
@@ -4943,58 +4969,56 @@
   </div>
   <!-- Gainhub Platform -->
 
-
-  <!-- ====== client stats start-->
-  <div class="  md:max-w-full py-[50px] md:px-24 lg:px-30 lg:px-[50px] stats reference bg-[#c9d8f147]">
-    <div class="w-full">
+<!-- ====== client stats start-->
+<div class="md:max-w-full py-[50px] md:px-24 lg:px-30 lg:px-[50px] stats reference bg-[#c9d8f147]">
+  <div class="w-full">
       <div class="mx-auto mb-[40px] max-w-[510px] text-center">
-        <span class="text-orange-500 block text-[18px] font-semibold mb-[12px]" style="font-family: 'Poppins', sans-serif;">
-          We are in good company.
-        </span>
-        <h2 class="font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B]" style="font-family: 'Poppins', sans-serif;">
-          Our References
-        </h2>
+          <span class="text-orange-500 block text-[20px] font-semibold mb-[12px]" style="font-family: 'Poppins', sans-serif;">
+              We are in good company.
+          </span>
+          <h2 class="font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#3D3D3D]" style="font-family: 'Poppins', sans-serif;">
+              Our References
+          </h2>
       </div>
-    </div>
-    <div class="grid lg:grid-cols-4 col-gap-5 ref-img  md:grid-cols-2 grid-cols-1 px-[50px]">
-      <div class="d-flex justify-content-center align-items-center ">
-        <img src="./static/images/minosha-logo-new.png" width="150px" />
+  </div>
+  <!-- Wrapper for the scrolling effect -->
+  <div id="image-scroll-wrapper">
+      <div id="image-scroll">
+          <div class="d-flex justify-content-center align-items-center">
+              <img src="./static/images/minosha-logo-new.png" width="150px" />
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+              <img src="./static/images/tensorwork-removebg-preview.png" width="150px" />
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+              <img src="./static/images/vimkes-removebg-preview.png" width="150px" />
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+              <img src="./static/images/stat-class.png" width="150px" />
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+              <img src="./static/images/oxford.png" width="150px" />
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+              <img src="./static/images/qnet.png" width="150px" />
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+              <img src="./static/images/edgestone.png" width="150px" />
+          </div>
       </div>
-      <div class="d-flex justify-content-center align-items-center ">
-        <img src="./static/images/tensorwork-removebg-preview.png" width="150px" />
-      </div>
-      <div class="d-flex justify-content-center align-items-center ">
-        <img src="./static/images/vimkes-removebg-preview.png" width="150px" />
-      </div>
-      <div class="d-flex justify-content-center align-items-center ">
-        <img src="./static/images/stat-class.png" width="150px" />
-      </div>
-
-    </div>
-    <br>
-    <div class="grid lg:grid-cols-4 col-gap-5 md:col-gap-5 ref-img md:grid-cols-2 grid-cols-1 mt-1 lg:px-[250px] pt-[50px] px-[50px]">
-      <div class="d-flex justify-content-center align-items-center mr-3"> <!-- Adjust the margin-right value -->
-        <img src="./static/images/oxford.png" width="150px" />
-      </div>
-      <div class="d-flex justify-content-center align-items-center mr-3">
-        <img src="./static/images/qnet.png" width="150px" />
-      </div>
-      <div class="d-flex justify-content-center align-items-center mr-3">
-        <img src="./static/images/edgestone.png" width="150px" />
-      </div>
-    </div>
-  <!-- ====== stats Ends-->
-
+  </div>
+</div>
+<!-- ====== stats Ends-->
 
   <!-- ====== Contact Section Start -->
   <section class="relative z-10 overflow-hidden bg-white dark:bg-dark pb-20 lg:py-[50px]  xl:py-[40px]" id="contact" style="font-family: 'Poppins', sans-serif;">
     <div class="flex flex-wrap justify-between px-[20px] sm:px-[60px] md:px-[60px] lg:px-[60px] lg:pe-[90px]">
       <div class="w-full  lg:w-5/12 xl:w-6/12">
         <div class="mb-12 max-w-[570px] lg:mb-0">
-          <span class="text-orange-500 block text-[18px] font-semibold mb-[12px]">
+          <span class="text-orange-500 block text-[20px] font-semibold mb-[12px]">
             Contact Us
           </span>
-          <h2 class="font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B] mb-[20px]">
+          <h2 class="font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#3D3D3D] mb-[20px]">
             Get in touch with us
           </h2>
           <p class="text-base leading-relaxed text-body-color dark:text-dark-6 mb-9 text-[16px]">

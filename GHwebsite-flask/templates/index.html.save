@@ -4108,7 +4108,7 @@
       <span class="text-orange-500 block text-[18px] font-semibold mb-[12px]">
         Still Paying For Multiple Applications?
       </span>
-      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B]">
+      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#3D3D3D]">
         GainHub does it all in one place- for a price of one!
       </h2>
     </div>
@@ -4147,7 +4147,7 @@
     <span class="text-orange-500 block text-[18px] font-semibold mb-[12px]">
       GainHub Integrations
     </span>
-    <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B]">
+    <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#3D3D3D]">
       Streamline Your Business with Seamless Integration
     </h2>
   </div>
@@ -4183,7 +4183,7 @@
         Unified
         Business Application
       </span>
-      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B] pb-3">
+      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#3D3D3D] pb-3">
         GainHub Platform
       </h2>
     </div> -->
@@ -4374,7 +4374,7 @@
       <span class="text-orange-500 block text-[18px] font-semibold mb-[12px]">
         GainHub Integrations
       </span>
-      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B]">
+      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#3D3D3D]">
         Streamline Your Business with Seamless Integration
       </h2>
     </div>
@@ -4383,21 +4383,21 @@
       <div class='still-container-banCon-1  '>
         <div class="lg:pe-5  ">
           <p class='quotes mb-1 text-[15px] lg:text-[16px] '>
-            <span class=" font-bold text-[#4B4B4B] text-[16px] lg:text-[17px]">Enhanced
+            <span class=" font-bold text-[#3D3D3D] text-[16px] lg:text-[17px]">Enhanced
               Productivity: </span> Integrating various business applications to automate workflows and reduce manual
             efforts, boosting overall productivity.
           </p>
           <p class='quotes mb-1  text-[15px] lg:text-[16px] '>
-            <span class=" font-bold text-[#4B4B4B] text-[16px] lg:text-[17px]">Improved Data
+            <span class=" font-bold text-[#3D3D3D] text-[16px] lg:text-[17px]">Improved Data
               Accuracy: </span> Ensuring real-time data synchronization across systems, reducing errors and maintaining
             data consistency
           </p>
           <p class='quotes mb-1 text-[15px] lg:text-[16px] '>
-            <span class=" font-bold text-[#4B4B4B] text-[16px] lg:text-[17px]">Scalability: </span> Easily
+            <span class=" font-bold text-[#3D3D3D] text-[16px] lg:text-[17px]">Scalability: </span> Easily
             scaling your operations by integrating applications without disrupting existing workflows.
           </p>
           <p class='quotes text-[15px] lg:text-[16px] '>
-            <span class=" font-bold text-[#4B4B4B] text-[16px] lg:text-[17px]">Better Decision-Making: </span> Gaining a unified view of your data from multiple sources, enabling better
+            <span class=" font-bold text-[#3D3D3D] text-[16px] lg:text-[17px]">Better Decision-Making: </span> Gaining a unified view of your data from multiple sources, enabling better
             analytics and informed decision-making.
           </p>
 
@@ -4461,7 +4461,7 @@
         Unified
         Business Application
       </span>
-      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B] pb-3">
+      <h2 class=" font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#3D3D3D] pb-3">
         GainHub Platform
       </h2>
     </div>
@@ -4473,7 +4473,7 @@
             <img src="./static/images/direct sales.png " height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class=" px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Direct Sales</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Direct Sales</p>
             <p class="text-[15px] lg:text-[16px] pb-5">It is a cloud-based Direct Sales-Ops with built-in
               email, lead scoring, task tracking, pipeline management, CPQ and OMS that helps sales team to close deals
               faster</p>
@@ -4489,7 +4489,7 @@
             <img src="./static/images/sector_retaill.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Retail Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Retail Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5 ">Retail management involves overseeing operations
               merchandising, and customer service in retail businesses.</p>
             <div class="gainHub-button">
@@ -4504,7 +4504,7 @@
             <img src="./static/images/manufacturing1.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Field Force Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Field Force Management</p>
             <p class="text-[15px]  lg:text-[16px] pb-5 ">Field force management involves optimizing the
               deployment and coordination of mobile workers.</p>
             <div class="gainHub-button">
@@ -4519,7 +4519,7 @@
             <img src="./static/images/service1.jpg" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Service Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Service Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5 ">Transform the way you deliver exceptional service with
               our
               comprehensive Service Management solution.</p>
@@ -4535,7 +4535,7 @@
             <img src="./static/images/project.jpg" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Project Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Project Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5">Project management is the practice of planning,
               organizing, directing, and controlling resources to achieve specific goals.</p>
             <div class="gainHub-button">
@@ -4550,7 +4550,7 @@
             <img src="./static/images/knowledge.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Knowledge Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Knowledge Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5">An easy-to-use digital solution for Knowledge Management
               in an organization to organize, store and disseminate information.</p>
             <div class="gainHub-button">
@@ -4565,7 +4565,7 @@
             <img src="./static/images/manufacturing.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold ">Manufacturing Management</p>
+            <p class="text-[#556EE6] fw-semibold ">Manufacturing Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5">Manufacturing management oversees production processes,
               quality control, and optimization for efficient manufacturing operations.</p>
             <div class="gainHub-button">
@@ -4580,7 +4580,7 @@
             <img src="./static/images/inventory1.jpg" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Inventory Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Inventory Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5 ">Inventory management involves overseeing the storage,
               tracking, and control of goods or materials within a business.</p>
             <div class="gainHub-button">
@@ -4595,7 +4595,7 @@
             <img src="./static/images/HRMS2.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">HR Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">HR Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5">An HR management system automates tasks like
               performance, and compliance for organizations.​</p>
             <div class="gainHub-button">
@@ -4610,7 +4610,7 @@
             <img src="./static/images/LMS1.jpg" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">E-Learning for Organisation</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">E-Learning for Organisation</p>
             <p class="text-[15px] lg:text-[16px] pb-5">Unlock the power of knowledge with our advanced Learning
               Management System (LMS).</p>
             <div class="gainHub-button">
@@ -4625,7 +4625,7 @@
             <img src="./static/images/MLM.jpg" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Multi-Level Marketing</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Multi-Level Marketing</p>
             <p class="text-[15px] lg:text-[16px] pb-5">Multi-level marketing involves selling products or
               services through a network of distributors who earn commissions on sales.</p>
             <div class="gainHub-button">
@@ -4641,7 +4641,7 @@
             <img src="./static/images/rfq.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">RFQ Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">RFQ Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5">Request for Quotation (RFQ) Management involves soliciting, evaluating, and selecting supplier bids to optimize procurement efficiency and cost savings.</p>
             <div class="gainHub-button">
               <a href=""><button
@@ -4656,7 +4656,7 @@
             <img src="./static/images/oms-1.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">OMS</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">OMS</p>
             <p class="text-[15px] lg:text-[16px] pb-5">Order Management Service (OMS) involves tracking, processing, and fulfilling customer orders efficiently, ensuring accurate inventory, timely delivery, and customer satisfaction.</p>
             <div class="gainHub-button">
               <a href=""><button
@@ -4671,7 +4671,7 @@
             <img src="./static/images/workflow management.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Workflow Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Workflow Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5">Workflow Management involves designing, automating, and optimizing business processes to improve efficiency, coordination, and task completion within an organization.</p>
             <div class="gainHub-button">
               <a href=""><button
@@ -4686,7 +4686,7 @@
             <img src="./static/images/LMS-institutions.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">LMS for Institutions</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">LMS for Institutions</p>
             <p class="text-[15px] lg:text-[16px] pb-5">A Learning Management System (LMS) for institutions facilitates the delivery, tracking, and management of educational content, assessments, and student progress in a centralized platform.</p>
             <div class="gainHub-button">
               <a href=""><button
@@ -4701,7 +4701,7 @@
             <img src="./static/images/purchase.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Purchase Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Purchase Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5">Purchase management involves overseeing the procurement process, including sourcing, ordering, and acquiring goods or services to ensure cost-effective and timely supply.</p>
             <div class="gainHub-button">
               <a href=""><button
@@ -4716,7 +4716,7 @@
             <img src="./static/images/travel.png" height="200px" class="rounded-top gainHub-product-img" />
           </div>
           <div class="px-4 gainHub-product-title">
-            <p class="text-[#7984EA] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Travel Management</p>
+            <p class="text-[#556EE6] fw-semibold mb-2" style="font-family: 'Poppins', sans-serif;">Travel Management</p>
             <p class="text-[15px] lg:text-[16px] pb-5">Travel management involves planning, booking, and organizing business or personal travel, ensuring cost efficiency, compliance, and traveler safety.</p>
             <div class="gainHub-button">
               <a href=""><button
@@ -4738,7 +4738,7 @@
         <span class="text-orange-500 block text-[18px] font-semibold mb-[12px]">
           We are in good company.
         </span>
-        <h2 class="font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B]">
+        <h2 class="font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#3D3D3D]">
           Our References
         </h2>
       </div>
@@ -4783,7 +4783,7 @@
           <span class="text-orange-500 block text-[18px] font-semibold mb-[12px]">
             Contact Us
           </span>
-          <h2 class="font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#4B4B4B] mb-[20px]">
+          <h2 class="font-bold text-[22px] lg:text-[24px] fontStyle mt-0 text-[#3D3D3D] mb-[20px]">
             Get in touch with us
           </h2>
           <p class="text-base leading-relaxed text-body-color dark:text-dark-6 mb-9 text-[16px]">
