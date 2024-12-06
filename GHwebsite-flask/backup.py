@@ -66,7 +66,7 @@ instrumentation_key = '61b0aded-11b2-4181-ab29-fbe0c44763fd'
 
 @app.route('/')
 def index():
-    return render_template('index1.html')
+    return render_template('index.html')
 
 # @app.route('/dashboard')
 # def dashboard():
